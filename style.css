@@ -1,0 +1,43 @@
+* { box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+body { margin: 0; background: #f3f4f6; }
+.topbar {
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  margin-right: 250px;
+  position: fixed;
+  width: calc(100% - 250px);
+  z-index: 10;
+}
+.user-profile { position: relative; display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.user-profile img { width: 40px; height: 40px; border-radius: 50%; }
+.logout-menu {
+  display: none; position: absolute; top: 60px; right: 0;
+  background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;
+}
+.logout-menu button { width: 100%; padding: 10px; background: #ef4444; color: white; border: none; }
+
+.sidebar {
+  width: 250px; height: 100vh; background: #1f2937;
+  position: fixed; right: 0; top: 0; color: white; overflow-y: auto; padding-top: 20px;
+}
+.sidebar h2 { text-align: center; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { padding: 15px; cursor: pointer; }
+.sidebar ul li:hover { background: #374151; }
+
+.content {
+  margin-right: 250px; margin-top: 70px; padding: 20px;
+}
+.dashboard-icons {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;
+}
+.icon {
+  background: white; padding: 20px; text-align: center;
+  border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer; transition: all 0.3s;
+}
+.icon:hover { background: #10b981; color: white; }
